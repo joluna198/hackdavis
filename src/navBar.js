@@ -11,7 +11,7 @@ const user = {
     email: 'tom@example.com',
     imageUrl:'https://1p6mrc269jq133xbrt414zvc-wpengine.netdna-ssl.com/wp-content/uploads/2019/02/placeholder-user-image.jpg'}
 const navigation = [
-    {name: 'Dashboard', href: '#', current: true},
+    {name: 'Dashboard', href: '/home', current: true},
     {name: 'Calendar', href: '/calendar', current: false},
     {
         name: 'Help', href: '/help', current: false
@@ -19,9 +19,9 @@ const navigation = [
 
 ]
 const userNavigation = [
-    {name: 'Your Profile', href: '#'},
-    {name: 'Settings', href: '#'},
-    {name: 'Sign out', href: '#'},
+    {name: 'Your Profile', href: '/'},
+    {name: 'Settings', href: '/'},
+    {name: 'Sign out', href: '/'},
 ]
 
 function classNames(...classes) {

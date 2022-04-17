@@ -1,9 +1,9 @@
-import logo from './logo.svg';
+
 import './App.css';
 import {tasks, task_color} from './FireBase/userdata' // EDIT: rename to CheckListDataFull?!
 import Example from "./navBar"
 import CheckList from "./CheckList";
-import {useState} from "react";
+
 
 function App() {
     console.log(window.location.href)
@@ -19,7 +19,7 @@ function App() {
     }
 
     return (
-        
+
         <Example dashboard={boardElements()}/>
     );
 }

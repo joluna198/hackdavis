@@ -1,7 +1,7 @@
 import logo from '../resources/cool-davis-logo-2017.png'
-import {Navigate, Redirect} from "react-router-dom";
+
 import { useNavigate } from "react-router-dom";
-import {useState} from "react";
+
 export default function Login() {
     let navigate = useNavigate();
     const routeChange = () =>{
