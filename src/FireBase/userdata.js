@@ -428,20 +428,24 @@ export const tasks = [{
 
 export const task_color = {
     'TRANSPORTATION CHECKLIST': {
-        'back_ground_color': 'bg-cyan-200',
-        'title_color': 'text-cyan-300'
+        'back_ground_color': 'bg-blue-200',
+        'title_color': 'text-blue-900',
+        'title_color_sec': 'text-blue-900'
     },
     'CONSUMPTION CHECKLIST': {
         'back_ground_color': 'bg-green-200',
-        'title_color': 'text-green-300'
+        'title_color': 'text-green-700',
+        'title_color_sec': 'text-green-700'
     },
     'HOME ENERGY SYSTEMS CHECKLIST': {
-        'back_ground_color': 'bg-yellow-200',
-        'title_color': 'text-yellow-300'
+        'back_ground_color': 'bg-yellow-100',
+        'title_color': 'text-yellow-500',
+        'title_color_sec': 'text-yellow-500'
     },
     'HOME ENERGY CHECKLIST': {
-        'back_ground_color': 'bg-red-300',
-        'title_color': 'text-red-400'
+        'back_ground_color': 'bg-red-100',
+        'title_color': 'text-red-500',
+        'title_color_sec': 'text-red-500'
     },
 
 

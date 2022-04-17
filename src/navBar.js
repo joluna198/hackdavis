@@ -9,9 +9,7 @@ import logoCool from './resources/imageedit_10_9298307561.png'
 const user = {
     name: 'Tom Cook',
     email: 'tom@example.com',
-    imageUrl:
-        'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
-}
+    imageUrl:'https://1p6mrc269jq133xbrt414zvc-wpengine.netdna-ssl.com/wp-content/uploads/2019/02/placeholder-user-image.jpg'}
 const navigation = [
     {name: 'Dashboard', href: '#', current: true},
     {name: 'Directory', href: '#', current: false},
@@ -184,12 +182,15 @@ export default function NavBarPage(props) {
                         </>
                     )}
                 </Disclosure>
-                <div className="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
-                    <h1 className="text-3xl font-bold text-gray-900">COOL HOME CHECKLISTS</h1>
+                <div className="max-w-7xl mx-auto py-10 mt-5  px-4 sm:px-6 lg:px-8">
+                    <h1 className="text-5xl font-bold text-gray-900 my-5 text-center">Cool Home CheckList</h1>
                 </div>
                 <main>
                     <div className="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
-                        <StatsBar/>
+                        <div className='text-center'>
+                            <StatsBar/>
+                        </div>
+
                         {props.dashboard}
                     </div>
                 </main>
