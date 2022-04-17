@@ -7,17 +7,7 @@ import {useState} from "react";
 
 function App() {
     console.log(window.location.href)
-    // DEPRECIATED SCORE METHOD;
-    // const [score, updateScore] = useState(0);
-    // const addScore = (x) => {
-    //     updateScore((prevScore) => prevScore + x);
-    // }
 
-    // const removeScore = (x) => {
-    //     updateScore((prevScore) => prevScore - x);
-    // }
-
-    /// This function is for destructoring the data
     const boardElements = () => {
         return (
             <div className='task-board-container'>
@@ -29,6 +19,7 @@ function App() {
     }
 
     return (
+        
         <Example dashboard={boardElements()}/>
     );
 }
@@ -36,27 +27,3 @@ function App() {
 export default App;
 
 
-
-// DEPRECIATED
-// const board = (layer1) => {
-//     return (
-//         <div className='task-board'>
-//             {/*The first layer of the data*/}
-//             <h1>{layer1.title}</h1>
-//             {/*Second layer*/}
-//             {layer1.data.map((layer2) => (
-//                 <div>
-//                     <h2>{layer2.title}</h2>
-//                     {/* Third Layer*/}
-//                     {layer2.data.map((layer3) => (
-//                         <div>
-//                             <p>{layer3.title}</p>
-//                             <p>{layer3.score}</p>
-//                         </div>
-//                     ))}
-//                 </div>
-
-//             ))}
-//         </div>
-//     )
-// }
