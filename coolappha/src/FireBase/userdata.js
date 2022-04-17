@@ -1,4 +1,4 @@
-const list_var = [{
+const tasks = [{
     title: 'TRANSPORTATION CHECKLIST',
     data: [ {
         title: "Change Commute",
