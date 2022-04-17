@@ -1,5 +1,6 @@
-import Checkbox from "./Checkbox";
+import CheckBox from "./CheckBox";
 
+// EDIT: temp dummy...
 const directory = {
     A: [
         {
@@ -205,11 +206,12 @@ const directory = {
     ],
 }
 
-export default function Example() {
+export default function CheckList({taskData}) {
     return (
         <nav className="h-full overflow-y-auto" aria-label="Directory">
-            {Object.keys(directory).map((letter) => (
-                        <Checkbox/>
+            <h1>{taskData.title}</h1>
+            {taskData.data.map((taskData) => (
+                <CheckBox key={taskData.title} taskData={taskData.data} subTitle={taskData.title}/>
             ))}
         </nav>
     )
