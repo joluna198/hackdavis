@@ -3,6 +3,7 @@ import './App.css';
 import {tasks} from './FireBase/userdata'
 import {useState} from "react";
 import Example from "./navBar"
+import CheckList from "./Checklist";
 
 function App() {
     const [score, updateScore] = useState(0);
@@ -42,7 +43,8 @@ function App() {
         return (
             <div className='task-board-container'>
                 {tasks.map((layer1) => (
-                    board(layer1)
+                    // board(layer1)
+                    <CheckList/>
                 ))}
             </div>
         )
@@ -50,20 +52,7 @@ function App() {
 
 
     return (
-        <div className='app-wrapper'>
-            <Example/>
-            <div className='bg-slate-500'>COOL HOME CHECKLISTS</div>
-            <div className='score-wrapper'>
-                <div className='score'>{score}</div>
-                <span>pts</span>
-            </div>
-
-            {boardElements()}
-
-
-
-
-        </div>
+        <Example dashboard={boardElements()}/>
 
     );
 }
