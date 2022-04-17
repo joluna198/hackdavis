@@ -12,7 +12,10 @@ const user = {
     imageUrl:'https://1p6mrc269jq133xbrt414zvc-wpengine.netdna-ssl.com/wp-content/uploads/2019/02/placeholder-user-image.jpg'}
 const navigation = [
     {name: 'Dashboard', href: '#', current: true},
-    {name: 'Directory', href: '#', current: false},
+    {name: 'Calendar', href: '/calendar', current: false},
+    {
+        name: 'Help', href: '/help', current: false
+    }
 
 ]
 const userNavigation = [
