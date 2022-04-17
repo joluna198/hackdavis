@@ -1,4 +1,4 @@
-const tasks = [{
+export const tasks = [{
     title: 'TRANSPORTATION CHECKLIST',
     data: [ {
         title: "Change Commute",
