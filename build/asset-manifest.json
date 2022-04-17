@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/static/css/main.fde8bad3.css",
+    "main.js": "/static/js/main.553a0dbf.js",
+    "static/js/787.f4d73a7a.chunk.js": "/static/js/787.f4d73a7a.chunk.js",
+    "static/media/imageedit_10_9298307561.png": "/static/media/imageedit_10_9298307561.155c327f97fd446086e5.png",
+    "static/media/cool-davis-logo-2017.png": "/static/media/cool-davis-logo-2017.0f5a53293b9405fec399.png",
+    "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/index.html",
+    "main.fde8bad3.css.map": "/static/css/main.fde8bad3.css.map",
+    "main.553a0dbf.js.map": "/static/js/main.553a0dbf.js.map",
+    "787.f4d73a7a.chunk.js.map": "/static/js/787.f4d73a7a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fde8bad3.css",
+    "static/js/main.553a0dbf.js"
+  ]
+}

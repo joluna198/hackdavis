@@ -20,8 +20,9 @@ root.render(
 
 
                 <Route  path='/' element={<Login/>}/>
-                <Route  path='/calendar' element={<Calendar/>}/>
-                <Route  path='/help' element={<Help/>}/>
+                <Route exact  path='login' element={<Login/>}/>
+                <Route  path='calendar' element={<Calendar/>}/>
+                <Route  path='help' element={<Help/>}/>
             </Routes>
 
         </BrowserRouter>
