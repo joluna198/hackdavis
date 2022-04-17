@@ -16,7 +16,7 @@ export default function CheckBox({taskData, subTitle, color}) {
         }
         return (
             <div key={Math.random()}
-                 className={`relative flex items-start py-4 px-2 border border-gray-200 my-2 rounded-md hover:${color.back_ground_color}`}>
+                 className={`relative flex items-start py-4 px-2 border border-gray-200 my-2 rounded-md bg-white hover:${color.back_ground_color}`}>
                 <div className="min-w-0 flex-1 text-sm">
                     <label className="font-medium text-gray-700 select-none">
                         {data.title}
