@@ -1,12 +1,13 @@
-// const people = [
-//     { id: 1, name: 'Annette Black' },
-//     { id: 2, name: 'Cody Fisher' },
-//     { id: 3, name: 'Courtney Henry' },
-//     { id: 4, name: 'Kathryn Murphy' },
-//     { id: 5, name: 'Theresa Webb' },
-// ]
+import {useState} from "react";
 
-export default function CheckBox({key, taskData, subTitle}) {
+export default function CheckBox({key, taskData, subTitle, onAdd, onRemove}) {
+    const [selected, setSelected] = useState(false); 
+    console.log("SELECTED STATE:", selected)
+    const onCheckHandler = () => {
+        setSelected((prevSelected) => !prevSelected)
+        let funcToExec = selected == false ? onAdd : onRemove;
+        funcToExec();
+    }
     return (
         <fieldset>
             <legend className="text-lg font-medium text-gray-900 text-center pt-14">{subTitle}</legend>
@@ -23,6 +24,7 @@ export default function CheckBox({key, taskData, subTitle}) {
                             id={data.title}
                             name={data.score}
                             type="checkbox"
+                            onChange={onCheckHandler}
                             className="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded"
                         />
                     </div>

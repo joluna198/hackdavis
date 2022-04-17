@@ -15,6 +15,7 @@ function App() {
     const removeScore = (x) => {
         updateScore((prevScore) => prevScore - x);
     }
+    console.log(score);
 
     /// This function is for destructoring the data
     const boardElements = () => {
@@ -22,7 +23,7 @@ function App() {
             <div className='task-board-container'>
                 {tasks.map((CheckListData) => (
                     // board(CheckListData)
-                    <CheckList taskData={CheckListData}/>
+                    <CheckList taskData={CheckListData} onAdd={addScore} onRemove={removeScore}/>
                 ))}
             </div>
         )

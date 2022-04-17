@@ -206,12 +206,12 @@ const directory = {
     ],
 }
 
-export default function CheckList({taskData}) {
+export default function CheckList({taskData, onAdd, onRemove}) {
     return (
         <nav className="h-full overflow-y-auto" aria-label="Directory">
             <h1>{taskData.title}</h1>
             {taskData.data.map((taskData) => (
-                <CheckBox key={taskData.title} taskData={taskData.data} subTitle={taskData.title}/>
+                <CheckBox key={taskData.title} taskData={taskData.data} subTitle={taskData.title} onAdd={onAdd} onRemove={onRemove}/>
             ))}
         </nav>
     )
