@@ -20,11 +20,11 @@ export default function StatsBar() {
                 </div>
                 <div className="px- py-5 pl-6 bg-white shadow-xl hover:scale-105  rounded-lg overflow-hidden sm:p-6">
                     <dt className="text-sm font-medium text-gray-500 truncate">{"Progress"}</dt>
-                    <progress className='bg-blue-500 mt-4' id="file" max="100" value="0"> 70% </progress>
+                    <progress className='bg-blue-500 mt-4' id="file" max="50" value={scoreCtx.score}> 70% </progress>
                 </div>
                 <div className="px- py-5 pl-6 bg-white shadow-xl hover:scale-105 rounded-lg overflow-hidden sm:p-6">
                     <dt className="text-sm font-medium text-gray-500 truncate">{"Total Score"}</dt>
-                    <dd className="mt-1 text-3xl font-semibold text-gray-900">1345</dd>
+                    <dd className="mt-1 text-3xl font-semibold text-gray-900">60</dd>
 
                 </div>
                 {/* ))} */}
