@@ -3,6 +3,8 @@ import { Fragment } from 'react'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { BellIcon, MenuIcon, XIcon } from '@heroicons/react/outline'
 import StatsBar from "./statsBar";
+import logoCool from './resources/imageedit_10_9298307561.png'
+
 
 const user = {
     name: 'Tom Cook',
@@ -12,10 +14,8 @@ const user = {
 }
 const navigation = [
     { name: 'Dashboard', href: '#', current: true },
-    { name: 'Team', href: '#', current: false },
-    { name: 'Projects', href: '#', current: false },
-    { name: 'Calendar', href: '#', current: false },
-    { name: 'Reports', href: '#', current: false },
+    { name: 'Directory', href: '#', current: false },
+   
 ]
 const userNavigation = [
     { name: 'Your Profile', href: '#' },
@@ -40,8 +40,8 @@ export default function Example(props) {
                                     <div className="flex items-center">
                                         <div className="flex-shrink-0">
                                             <img
-                                                className="h-8 w-8"
-                                                src="https://tailwindui.com/img/logos/workflow-mark-indigo-500.svg"
+                                               className="h-15 w-14"
+                                                src={logoCool}
                                                 alt="Workflow"
                                             />
                                         </div>
