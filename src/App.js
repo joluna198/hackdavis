@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import {tasks} from './FireBase/userdata'
 import {useState} from "react";
+import Example from "./navBar"
 
 function App() {
     const [score, updateScore] = useState(0);
@@ -50,6 +51,7 @@ function App() {
 
     return (
         <div className='app-wrapper'>
+            <Example/>
             <div className='bg-slate-500'>COOL HOME CHECKLISTS</div>
             <div className='score-wrapper'>
                 <div className='score'>{score}</div>
@@ -58,7 +60,11 @@ function App() {
 
             {boardElements()}
 
+
+
+
         </div>
+
     );
 }
 
