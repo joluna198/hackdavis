@@ -8,6 +8,7 @@ import {BrowserRouter, Routes, Route} from "react-router-dom";
 
 import Login from "./login/Login";
 import Calendar from "./calendar/Calendar";
+import Help from "./help/Help";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -20,6 +21,7 @@ root.render(
 
                 <Route  path='/' element={<Login/>}/>
                 <Route  path='/calendar' element={<Calendar/>}/>
+                <Route  path='/help' element={<Help/>}/>
             </Routes>
 
         </BrowserRouter>
