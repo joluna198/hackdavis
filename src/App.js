@@ -21,7 +21,7 @@ function App() {
         return (
             <div className='task-board-container'>
                 {tasks.map((CheckListData) => (
-                    <CheckList key={Math.random()} mainListData={CheckListData} color={task_color}/>
+                    <CheckList key={Math.random()} mainListData={CheckListData} color={task_color} onAdd={addScore} onRemove={removeScore}/>
                 ))}
             </div>
         )
