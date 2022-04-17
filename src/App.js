@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import {tasks} from './FireBase/userdata' // EDIT: rename to CheckListDataFull?!
+import {tasks, task_color} from './FireBase/userdata' // EDIT: rename to CheckListDataFull?!
 import {useState} from "react";
 import Example from "./navBar"
 import CheckList from "./CheckList";
@@ -21,8 +21,7 @@ function App() {
         return (
             <div className='task-board-container'>
                 {tasks.map((CheckListData) => (
-                    // board(CheckListData)
-                    <CheckList taskData={CheckListData}/>
+                    <CheckList key={Math.random()} mainListData={CheckListData} color={task_color}/>
                 ))}
             </div>
         )

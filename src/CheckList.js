@@ -206,12 +206,12 @@ const directory = {
     ],
 }
 
-export default function CheckList({taskData}) {
+export default function CheckList({mainListData, color}) {
     return (
         <nav className="h-full overflow-y-auto" aria-label="Directory">
-            <h1>{taskData.title}</h1>
-            {taskData.data.map((taskData) => (
-                <CheckBox key={taskData.title} taskData={taskData.data} subTitle={taskData.title}/>
+            <div className={`text-lg font-medium text-gray-900 text-center mt-14 ${color[mainListData.title].title_color}`}> {mainListData.title}</div>
+            {mainListData.data.map((taskData) => (
+                <CheckBox key={Math.random()} taskData={taskData.data} subTitle={taskData.title} color={color[mainListData.title]}/>
             ))}
         </nav>
     )

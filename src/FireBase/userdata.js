@@ -426,22 +426,22 @@ export const tasks = [{
     }
 ]
 
-const task_color = {
+export const task_color = {
     'TRANSPORTATION CHECKLIST': {
         'back_ground_color': 'bg-cyan-200',
-        'title': 'text-cyan-300'
+        'title_color': 'text-cyan-300'
     },
     'CONSUMPTION CHECKLIST': {
         'back_ground_color': 'bg-green-200',
-        'title': 'text-green-300'
-    },
-    'HOME ENERGY SYSTEMS SYSTEMS CHECKLIST': {
-        'back_ground_color': 'bg-yellow-200',
-        'title': 'text-yellow-300'
+        'title_color': 'text-green-300'
     },
     'HOME ENERGY SYSTEMS CHECKLIST': {
+        'back_ground_color': 'bg-yellow-200',
+        'title_color': 'text-yellow-300'
+    },
+    'HOME ENERGY CHECKLIST': {
         'back_ground_color': 'bg-red-300',
-        'title': 'text-red-400'
+        'title_color': 'text-red-400'
     },
 
 
