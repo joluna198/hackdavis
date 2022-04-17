@@ -8,6 +8,8 @@ import CheckList from "./CheckList";
 function App() {
     const [score, updateScore] = useState(0);
 
+    console.log(score)
+
     const addScore = (x) => {
         updateScore((prevScore) => prevScore + x);
     }
