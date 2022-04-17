@@ -6,6 +6,7 @@ import CheckList from "./CheckList";
 import {useState} from "react";
 
 function App() {
+    console.log(window.location.href)
     // DEPRECIATED SCORE METHOD;
     // const [score, updateScore] = useState(0);
     // const addScore = (x) => {
