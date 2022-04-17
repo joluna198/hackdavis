@@ -10,9 +10,9 @@ export default function Checkbox() {
     return (
         <fieldset>
             <legend className="text-lg font-medium text-gray-900">Members</legend>
-            <div className="mt-4 border-t border-b border-gray-200 divide-y divide-gray-200">
+            <div className="divide-gray-200 ">
                 {people.map((person, personIdx) => (
-                    <div key={personIdx} className="relative flex items-start py-4">
+                    <div key={personIdx} className="relative flex items-start py-4 px-2 border border-gray-200 my-2 rounded-md">
                         <div className="min-w-0 flex-1 text-sm">
                             <label htmlFor={person.id} className="font-medium text-gray-700 select-none">
                                 {person.name}
