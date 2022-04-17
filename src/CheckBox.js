@@ -1,16 +1,18 @@
-import {useState} from "react";
+import {useState, useContext} from "react";
+import ScoreContext from './store/score-context';
 
-export default function CheckBox({taskData, subTitle, onAdd, onRemove, color}) {
+export default function CheckBox({taskData, subTitle, color}) {
+    const scoreCtx = useContext(ScoreContext);
     const SingleCheckBox = (data) => {
         const [selected, setSelected] = useState(false);
         const onCheckHandler = (e) => {
-            console.log(selected)
-            setSelected(!selected)
-            // if (selected) {
-            //     onRemove(1)
-            // } else {
-            //     onAdd(1)
-            // }
+            console.log(selected, "<-being changed to opposite!")
+            setSelected(!selected);
+            if (selected) {
+                scoreCtx.subtractFromScore(1);
+            } else {
+                scoreCtx.addToScore(1);
+            }
         }
         return (
             <div key={Math.random()}

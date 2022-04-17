@@ -1,29 +1,27 @@
 import logo from './logo.svg';
 import './App.css';
 import {tasks, task_color} from './FireBase/userdata' // EDIT: rename to CheckListDataFull?!
-import {useState} from "react";
 import Example from "./navBar"
 import CheckList from "./CheckList";
+import {useState} from "react";
 
 function App() {
-    const [score, updateScore] = useState(0);
+    // DEPRECIATED SCORE METHOD;
+    // const [score, updateScore] = useState(0);
+    // const addScore = (x) => {
+    //     updateScore((prevScore) => prevScore + x);
+    // }
 
-    console.log(score)
-
-    const addScore = (x) => {
-        updateScore((prevScore) => prevScore + x);
-    }
-
-    const removeScore = (x) => {
-        updateScore((prevScore) => prevScore - x);
-    }
+    // const removeScore = (x) => {
+    //     updateScore((prevScore) => prevScore - x);
+    // }
 
     /// This function is for destructoring the data
     const boardElements = () => {
         return (
             <div className='task-board-container'>
                 {tasks.map((CheckListData) => (
-                    <CheckList key={Math.random()} mainListData={CheckListData} color={task_color} onAdd={addScore} onRemove={removeScore}/>
+                    <CheckList key={Math.random()} mainListData={CheckListData} color={task_color}/>
                 ))}
             </div>
         )
