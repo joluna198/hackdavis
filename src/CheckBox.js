@@ -12,7 +12,7 @@ export default function CheckBox({key, taskData, subTitle}) {
             <legend className="text-lg font-medium text-gray-900 text-center pt-14">{subTitle}</legend>
             <div className="">
             {taskData.map((data) => (
-                <div className="relative flex items-start py-4 px-2 border border-gray-200 my-2 rounded-md hover:bg-gray-100">
+                <div className="relative flex items-start py-4 px-2 border border-gray-200 my-2 rounded-md hover:bg-blue-100">
                     <div className="min-w-0 flex-1 text-sm">
                         <label className="font-medium text-gray-700 select-none">
                             {data.title}

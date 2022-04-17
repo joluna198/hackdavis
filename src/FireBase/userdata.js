@@ -1,6 +1,6 @@
 export const tasks = [{
     title: 'TRANSPORTATION CHECKLIST',
-    data: [ {
+    data: [{
         title: "Change Commute",
         data: [
             {
@@ -21,7 +21,7 @@ export const tasks = [{
             },
 
         ]
-        },
+    },
         {
             title: "Change Mode In Town ",
             data: [
@@ -70,7 +70,6 @@ export const tasks = [{
                 },
 
 
-
             ]
 
         },
@@ -98,7 +97,6 @@ export const tasks = [{
                     title: "  Reduce # of cars owned",
                     score: 1
                 }
-
 
 
             ]
@@ -233,7 +231,7 @@ export const tasks = [{
             title: "Share or Rent",
             data: [
                 {
-                    title: "Share tools, equipment w/others" ,
+                    title: "Share tools, equipment w/others",
                     score: 1
                 },
                 {
@@ -248,7 +246,7 @@ export const tasks = [{
         title: 'HOME ENERGY SYSTEMS CHECKLIST',
         data: [
             {
-                title: "Change System" ,
+                title: "Change System",
                 data: [
                     {
                         title: 'Install photovoltaic panels (rooftop solar)',
@@ -334,7 +332,7 @@ export const tasks = [{
                 ]
             }
         ]
-    } ,
+    },
     {
         title: "HOME ENERGY CHECKLIST",
         data: [
@@ -427,3 +425,24 @@ export const tasks = [{
         ]
     }
 ]
+
+const task_color = {
+    'TRANSPORTATION CHECKLIST': {
+        'back_ground_color': 'bg-cyan-200',
+        'title': 'text-cyan-300'
+    },
+    'CONSUMPTION CHECKLIST': {
+        'back_ground_color': 'bg-green-200',
+        'title': 'text-green-300'
+    },
+    'HOME ENERGY SYSTEMS SYSTEMS CHECKLIST': {
+        'back_ground_color': 'bg-yellow-200',
+        'title': 'text-yellow-300'
+    },
+    'HOME ENERGY SYSTEMS CHECKLIST': {
+        'back_ground_color': 'bg-red-300',
+        'title': 'text-red-400'
+    },
+
+
+}
