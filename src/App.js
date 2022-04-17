@@ -52,12 +52,12 @@ function App() {
         <div className='app-wrapper'>
             <div>COOL HOME CHECKLISTS</div>
             <div className='score-wrapper'>
-                <div className='score'>{score}</div><span>pts</span>
+                <div className='score'>{score}</div>
+                <span>pts</span>
             </div>
 
-            <div className='task-board-container'>
-                {boardElements()}
-            </div>
+            {boardElements()}
+
         </div>
     );
 }
