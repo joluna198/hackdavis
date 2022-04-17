@@ -50,7 +50,7 @@ function App() {
 
     return (
         <div className='app-wrapper'>
-            <div>COOL HOME CHECKLISTS</div>
+            <div className='bg-slate-500'>COOL HOME CHECKLISTS</div>
             <div className='score-wrapper'>
                 <div className='score'>{score}</div>
                 <span>pts</span>
